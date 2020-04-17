@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="./javascript/funciones.js"></script>
+        <meta charset="utf-8">
+		<title>HTML 5 - Formulario Alta Empleado</title>
+	</head>
+    <body>
+        <form id="form" action="administracion.php" method="POST">
+            <table align="center">
+                <tbody>
+                    <tr>
+                        <h2>
+                            Alta de Empleados
+                        </h2>
+                    </tr>
+                        <br>
+                    <tr>
+                        <td colspan="2">
+                            <h4>
+                                Datos Personales
+                            </h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DNI:</td>
+                        <td style="padding-right:15px">
+                        <input type="number" name="Dni" id="Dni" min="1000000" max="55000000">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Apellido:</td>
+                        <td style="padding-right:15px">
+                        <input type="text" name="Apellido" id="Apellido">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nombre:</td>
+                        <td style="padding-right:15px">
+                        <input type="text" name="Nombre" id="Nombre">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sexo:</td>
+                        <td style="padding-right:15px">
+                        <select id="Sexo" name="Sexo">
+                            <option>Seleccione</option>
+                            <option value="M">Masculino </option>
+                            <option value="F">Femenino</option>
+                        </td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td colspan="2">
+                            <h4>
+                                Datos Laborales
+                            </h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Legajo:</td>
+                        <td style="padding-right:15px">
+                        <input type="number" name="Legajo" id="Legajo" min="100" max="550">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sueldo:</td>
+                        <td style="padding-right:15px">
+                        <input type="number" name="Sueldo" id="Sueldo">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Turno:</td>
+                    
+                    <td>
+                        <input type="radio" id="Mañana" name="radios" value="Mañana" checked=true>
+                        <label for="Mañana">Mañana</label><br>
+                        <input type="radio" id="Tarde" name="radios" value="Tarde">
+                        <label for="Tarde">Tarde</label><br>
+                        <input type="radio" id="Noche" name="radios" value="Noche">
+                        <label for="Noche">Noche</label>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="right">
+                            <input type="reset" value="Limpiar">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="right">
+                            <input type="submit" id="btnEnviar" value="Enviar" onclick="AdministrarValidaciones()">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>        
+        </form>
+    </body>
+</html>
